@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-const FileUpload = () => {
+const FileUpload = (props) => {
   return (
     <Fragment>
       <form>
@@ -13,7 +13,12 @@ const FileUpload = () => {
         <input
           type="submit"
           value="Upload"
-          className="btn btn-primary btn-block mt-4"
+          className="custom-btn btn-3"
+        />
+        <input
+          type="submit"
+          value="Close"
+          className="custom-btn btn-3"
         />
       </form>
     </Fragment>
