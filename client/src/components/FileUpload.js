@@ -24,7 +24,7 @@ const FileUpload = (props) => {
       headers: { "content-type": "multipart/form-data" }
     };
     axios
-      .post("/upload", formData, config)
+      .post("http://localhost:5000/upload", formData, config)
       .then((res) => {
         const { fileName, filePath } = res.data;
         setUploadedFile({ fileName, filePath });
