@@ -12,7 +12,7 @@ export default function HeartGl(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/Heart.gltf");
   const { actions } = useAnimations(animations, group);
-  console.log("HeartGl", props);
+  // console.log("HeartGl", props);
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -348,8 +348,8 @@ export default function HeartGl(props) {
         {props.images.map((index, i) => {
           //console.log(nodes);
           // algo find the number after myPlane depending on the suffix aor i
-          console.log("myPlane258Shape_Mash_heart_instancer_"+i);
-          console.log(`./images/${myjson.images[index].name}`);
+          // console.log("myPlane258Shape_Mash_heart_instancer_"+i);
+          // console.log(`./images/${myjson.images[index].name}`);
         })}
         </group>
         <PerspectiveCamera

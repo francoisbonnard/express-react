@@ -184,7 +184,7 @@ function App() {
             <h4 className="display-4 text-center mb-4">
               <i className="fab fa-react"></i>File Upload
             </h4>
-            <FileUpload closeWindow={openPopupAdd} />
+            <FileUpload closeWindow={openPopupAdd} imagesNumber={imagesNumber} />
           </div>
         </div>
       )}

@@ -6,7 +6,7 @@ import { OrbitControls } from "@react-three/drei/core";
 import HeartGl from "./HeartGl";
   
   export default function LoaderGl(props) {
-    console.log(props)
+    // console.log(props)
     return (
       <div>
         <Suspense>
